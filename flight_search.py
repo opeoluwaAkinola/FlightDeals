@@ -2,7 +2,8 @@ import requests
 
 class FlightSearch:
     def __init__(self,flyFrom,flyTo,dateFrom,dateTo):
-        self.APIKEY="1dpudZ_0Jw2qhBqjSQ_1J-hTizoUfhxW"
+        #insert API KEY
+        self.APIKEY=""
         self.ENDPOint="https://tequila-api.kiwi.com/v2/search"
         self.flyfrom=flyFrom
         self.places=flyTo
