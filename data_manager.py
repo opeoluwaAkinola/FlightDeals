@@ -1,7 +1,8 @@
 import requests
 class DataManager:
     def __init__(self):
-        self.authorisation="Basic b3BpaWk6UmljaGFyZDE="
+        #Insert your own self authorization
+        self.authorisation=""
         self.header={
             "Authorization":self.authorisation
         }
@@ -20,7 +21,8 @@ class DataManager:
             response=requests.put(url=self.endpoint,json=params,headers=self.header)
             print(response)
     def GetFromsheet(self):
-        self.endpoint="https://api.sheety.co/bc757108ae8348bdd9eb40e61eddd5d5/copyOfFlightDeals/prices"
+        #INSERT YOU OWN SHEETY endpoint
+        self.endpoint=""
         response=requests.get(url=self.endpoint,headers=self.header)
         list=[]
         for row in response.json()["prices"]:
